@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require "mikutter_plugin_manager"
+
+MikutterPluginManager::CLI.start
