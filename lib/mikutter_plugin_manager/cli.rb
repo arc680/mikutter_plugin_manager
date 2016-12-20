@@ -4,24 +4,23 @@ require 'thor'
 
 module MikutterPluginManager
   class CLI < Thor
-    desc "init", "create hoge.yaml"
+    desc "init", "create hoge.yml"
     option :path, type: :string, default: File.expand_path('~/.mikutter/plugin')
     def init()
-      MikutterPluginManager.init(options[:path])
-      puts 'generated plugins.yaml'
+      puts 'generated plugins.yml' if MikutterPluginManager.init(options[:path])
     end
 
-    desc "install", "install plugin from hoge.yaml"
+    desc "install", "install plugin from hoge.yml"
     def install()
-      puts 'installed all plugins from plugins.yaml' if MikutterPluginManager.install
+      puts 'installed all plugins from plugins.yml' if MikutterPluginManager.install
     end
 
-    desc "update", "update plugin from hoge.yaml"
+    desc "update", "update plugin from hoge.yml"
     def update()
       MikutterPluginManager.update
     end
 
-    desc "export", "export plugin to hoge.yaml"
+    desc "export", "export plugin to hoge.yml"
     def export()
       MikutterPluginManager.export
     end
