@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["arc680"]
   spec.email         = ["arc680@live.com"]
 
-  spec.summary       = %q{mpm}
-  spec.description   = %q{mpm}
+  spec.summary       = %q{mikutter プラグイン管理}
+  spec.description   = %q{mikutter プラグインを管理する何か}
   spec.homepage      = "https://github.com/arc680/mikutter_plugin_manager"
   spec.license       = "MIT"
 

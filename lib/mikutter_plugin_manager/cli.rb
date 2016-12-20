@@ -15,15 +15,15 @@ module MikutterPluginManager
       puts 'installed all plugins from plugins.yml' if MikutterPluginManager.install
     end
 
-    desc "update", "update plugin from hoge.yml"
-    def update()
-      MikutterPluginManager.update
-    end
+    # desc "update", "update plugin from hoge.yml"
+    # def update()
+    #   MikutterPluginManager.update
+    # end
 
-    desc "export", "export plugin to hoge.yml"
-    def export()
-      MikutterPluginManager.export
-    end
+    # desc "export", "export plugin to hoge.yml"
+    # def export()
+    #   MikutterPluginManager.export
+    # end
 
     desc "require", "install one plugin"
     def require(target_repo, target_name = nil)
